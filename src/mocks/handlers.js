@@ -14,7 +14,7 @@ function mockDelay(milliseconds) {
 
 export const handlers = [
   rest.get('/api/articles', (req, res, ctx) => {
-    mockDelay(500);
+    mockDelay(1000);
     return res(
       ctx.status(200),
       ctx.json(
@@ -28,7 +28,7 @@ export const handlers = [
     );
   }),
   rest.get('/api/articles/:articleId', (req, res, ctx) => {
-    mockDelay(500);
+    mockDelay(1000);
     const { articleId } = req.params;
     return res(
       ctx.status(200),
@@ -38,7 +38,7 @@ export const handlers = [
     );
   }),
   rest.get('/api/articles/:articleId/comments', (req, res, ctx) => {
-    mockDelay(500);
+    mockDelay(1000);
     const { articleId } = req.params;
     const userCommentsForArticle = userComments[articleId] || [];
     return res(
@@ -52,7 +52,7 @@ export const handlers = [
     );
   }),
   rest.post('/api/articles/:articleId/comments', (req, res, ctx) => {
-    mockDelay(500);
+    mockDelay(1000);
     const { articleId } = req.params;
     const commentResponse = {
       id: commentsData.length,
