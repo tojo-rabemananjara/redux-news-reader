@@ -2,6 +2,8 @@
 
 ## redux-news-reader Async Thunks etc.
 
+*   Note! need to use `http://192.168.1.158:3000` not `localhost:3000` after an `npm start`!
+
 ## Project Structure
 
 <img src="../../../../../../../../../Library/Application%20Support/typora-user-images/image-20211217075907169.png" alt="image-20211217075907169" style="zoom:50%;" />
@@ -676,5 +678,5 @@ export const handlers = [
 ];
 ```
 
-*   Lots of stuff I don't really get yet.
-*   Seems like Backend stuff
+*   Lots of stuff I don't really get yet in the immediately above code.
+    *   Seems like Backend stuff, I'll get there!
